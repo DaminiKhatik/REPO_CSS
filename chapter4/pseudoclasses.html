@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+       
+        a,p:link {
+          color: red;
+        }
+        
+        
+        a:visited {
+          color: green;
+        }
+        p:visited {
+          color: green;
+        }
+        
+       
+        a,p:hover {
+          color: hotpink;
+        }
+        
+        p:active {
+          color: blue;
+        }
+        p:focus{
+            color: rgb(33, 113, 129);
+        }
+        p::focus-within {
+            color: blueviolet;
+        }
+        </style>
+</head>
+<body>
+    <h2>Pseudo-classes</h2>
+
+    <p><a href="helloworld.html" target="_blank">helloworld</a></p>
+<br>
+<p>A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, the pseudo-class :hover can be used to select a button when a user's pointer hovers over the button and this selected button can then be styled</p>
+</body>
+</html>

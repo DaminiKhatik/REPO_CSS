@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        div p {
+ color:rgb(170, 65, 205);
+}
+
+        div > p {
+ color:rgb(50, 194, 57);
+}
+        p + p {
+ color:hsl(0, 90%, 67%);
+}
+        p ~ p {
+ color:#ffbf00;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Combinators</h1>
+    <div>
+        <p>My text is red</p>
+        <section>
+        <p>My text is red</p>
+        </section>
+       </div>
+       <p>My text is not red</p>
+       
+       <br>
+<div>
+        <p>My text is red</p>
+        <section>
+        <p>My text is not red</p>
+        </section>
+       </div>
+       <br>
+
+       <p>My text is not red</p>
+<p>My text is red</p>
+<p>My text is red</p>
+<hr>
+<p>My text is not red</p>
+<br>
+
+<p>My text is not red</p>
+<p>My text is red</p>
+<hr>
+<h5>And now a title</h5>
+<p>My text is red</p>
+</body>
+</html>

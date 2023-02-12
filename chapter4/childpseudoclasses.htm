@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Child Pseudo-classes</title>
+    <style>
+       
+    p:first-child {
+  color: #79dfda;
+  background-color: black;
+  padding: 5px;
+}
+p:nth-child(3)
+{
+    color: hsl(173, 17%, 9%);
+  background-color: #54e013;
+  padding: 9px;
+}
+h2:first-child {
+  color: #4b41bd;
+  background-color: rgb(225, 249, 46);
+  padding: 5px;}
+ 
+  p:nth-child(even){
+    color: #41bd87;
+  background-color: rgb(174, 20, 138);
+  padding: 5px
+}
+</style>
+
+</head>
+<body>
+    <div>
+        <p>you are not selected!</p>
+        <p>you are selected.</p>
+        <p>now you are selected.</p>
+        <p>now you are selected.</p>
+        <p>now you are selected.</p>
+        <p>now you are selected.</p>
+        <p>now you are selected.</p>
+      </div>
+      
+      <div>
+        <h2>you are not selected try next time </h2>
+        <p>now you are selected.</p>
+      </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <style>
+[class*="five"] {
+ color: red;
+}
+[class~="two"] {
+ color: rgb(0, 255, 234);
+}
+[class="one"] {
+ color: rgb(72, 50, 159);
+}
+[class^="three"] {
+ color: rgb(78, 227, 98);
+}
+[class$="four"] {
+ color: rgb(181, 27, 89);
+}
+[class|='six'] {
+ color: rgb(248, 110, 24);
+}
+[class='seven' i] {
+ color: rgb(212, 135, 239);
+}
+
+    </style>
+</head>
+<body>
+    <h3 class="one">[attr='val'] div attr="val" Where attribute attr has value val</h3><br>
+    <h3 class="two"> [attr~='val'] div attr="val val2 val3"
+        Where val appears in the
+        whitespace-separated list of attr</h3><br>
+    <h3 class="three">[attr^='val'] div attr="val1 val2" Where attr's value begins with val</h3><br>
+    <h3 class="four">[attr$='val'] div attr="sth aval" Where the attr's value ends with val</h3><br>
+    <h3 class="five">[attr*='val'] div attr="somevalhere" Where attr contains val anywhere</h3><br>
+    <h3 class="six">[attr|='val'] div attr="val-sth etc"Where attr's value is exactly val, or starts with val and immediately
+    followed by - (U+002D)</h3><br>
+    <h3 class="seven">[attr='val' i] <div attr="val">
+        Where attr has value val,
+        ignoring val's letter casing. </h3><br>
+
+</body>
+</html>
