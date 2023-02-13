@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapsing</title>
+    <style>
+        h4 {
+  margin: 0 0 50px 0;
+}
+
+h2{
+  margin: 20px 0 20px 0;
+}
+p{
+    margin: 10px;
+}
+    </style>
+</head>
+<body>
+    <h2>Margin Collapsing</h2>
+
+    <h4>When two margins are touching each other vertically, they are collapsed. When two margins touch horizontally,
+        they do not collapse.</h4>
+        <br>
+        <h4>
+They will be 10px apart since vertical margins collapse over one and other. (The spacing will not be the sum of two
+margins
+        </h4>
+        <br>
+        <h4>They will be 20px apart since horizontal margins don't collapse over one and other. (The spacing will be the sum of
+            two margins.)
+        </h4>
+</body>
+</html>
