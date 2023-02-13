@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow: scroll and visible</title>
+    <style>
+div {
+ width: 150px;
+ height: 150px;
+}
+#div-x {
+ overflow-x: scroll;
+ background-color: rgb(49, 101, 101);
+}
+#div-y {
+ overflow-y:visible;
+ background-color: cyan;
+}
+
+    </style>
+</head>
+<body>
+    <h2>overflow: scroll and visible</h2>
+    <div id="div-x">
+        If this div is too small to display its contents,
+        the content to the left and right will be clipped.
+       </div>
+       <br>       <br>
+       <br>
+
+       <div id="div-y">
+        If this div is too small to display its contents,
+        the content to the top and bottom will be clipped.
+       </div>
+</body>
+</html>
