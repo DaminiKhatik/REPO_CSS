@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering vertically and horizontally without
+        worrying about height or width</title>
+        <style>
+            body {
+ margin : 0;
+}
+.outer-container {
+ position : absolute;
+ display: table;
+ width: 100%; 
+ height: 100%; 
+ background: #145ecd;
+}
+.inner-container {
+ display: table-cell;
+ vertical-align: middle;
+ text-align: center;
+}
+.centered-content {
+ display: inline-block;
+ text-align: left;
+ background: #acf8e6;
+ padding: 20px;
+ border: 1px solid #000;
+}
+        </style>
+</head>
+<body>
+    <h2>Centering vertically and horizontally without
+        worrying about height or width</h2>
+        <div class="outer-container">
+            <div class="inner-container">
+            <div class="centered-content">
+            text here!
+            </div>
+            </div>
+           </div>
+</body>
+</html>

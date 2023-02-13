@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical align anything with 3 lines of code</title>
+    <style>
+    body {
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  background: #1c1238;
+  padding: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+vertical {
+  display: block;
+  max-width: 500px;
+  background: #4d29bae0;
+  margin: 0 auto 1em;
+  height: 140px;
+  border-radius: .5em;
+  color: white;
+}
+
+.p {
+  position: relative;
+  top: 50%;
+  	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+  text-align:center;
+}
+       
+       </style>
+</head>
+<body>
+    <h2>Vertical align anything with 3 lines of code</h2>
+    
+       <p class="vertical">Vertical aligned text!</p>
+
+</body>
+</html>

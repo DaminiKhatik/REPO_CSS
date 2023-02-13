@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using calc()</title>
+    <style>
+        .center {
+ position: absolute;
+ height: 100px;
+ width: 100px;
+ background: rgb(233, 245, 8);
+ top: calc(50% - 50px / 2); /* height divided by 2*/
+ left: calc(50% - 50px / 2); /* width divided by 2*/
+}
+    </style>
+</head>
+<body>
+    <h3>Using calc()</h3>
+    <div class="center"></div>
+</body>
+</html>

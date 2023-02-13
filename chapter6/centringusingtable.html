@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Horizontal and Vertical centering using table
+        layout</title>
+        <style>
+            .wrapper {
+ display: table;
+ vertical-align: center;
+ width: 200px;
+ height: 200px;
+ background-color: #828930;
+}
+.parent {
+ display: table-cell;
+ vertical-align: middle;
+ text-align: center;
+}
+.child {
+ display: inline-block;
+ vertical-align: middle;
+ text-align: center;
+ width: 100px;
+ height: 100px;
+ background-color: teal;
+}
+
+        </style>
+</head>
+<body>
+    <h2> Horizontal and Vertical centering using table
+        layout</h2>
+        <div class="wrapper">
+            <div class="parent">
+            <div class="child"></div>
+            </div>
+           </div>
+           
+</body>
+</html>
