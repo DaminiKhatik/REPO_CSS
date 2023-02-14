@@ -1,0 +1,15 @@
+h2 {
+    color: green;
+    text-decoration: underline;
+    }
+    p {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: red;
+    background-color: rgb(211, 187, 233);
+    }
+    body{
+       text-align: center;
+       background-color: rgb(229, 41, 176);
+    }
+   
