@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Control</title>
+    <style>
+        li {
+ display : inline;
+ background : lightblue;
+ padding:10px;
+ border-width:2px;
+ border-color:black;
+ border-style:solid;
+        }
+        .table-div {
+ display: table;
+ background-color: aqua;
+ }
+ .table-row-div {
+ display: table-row;
+ background-color: blue;
+ }
+ .table-cell-div {
+ display: table-cell;
+ background-color: brown;
+ }
+
+    </style>
+</head>
+<body>
+    <h1>Layout Control</h1>
+    <br>
+    <h3>The display property</h3>
+
+<!--Inline-->
+    <span>This is some <b>bolded</b> text!</span>
+    <br>
+    <br>
+    <!--Block-->
+    <div style="background-color: skyblue;">Hello world!</div><div style="background-color: skyblue;">This is an example!</div>
+
+    <br>
+    <br>
+    <!--Inline Block-->
+    <ul>
+        <li>First Element </li>
+        <li>Second Element </li>
+        <li>Third Element </li>
+        </ul>
+        <strong>Note</strong><p> there are 3 type of disply inline, block and and  inline-block here we use inline dispay you can use remain as well</p>
+
+        <br>
+    <br>
+    <h2>To get old table structure using div</h2>
+    <div class="table-div">
+        <div class="table-row-div">
+        <div class="table-cell-div">
+        I behave like a table now
+        </div>
+        </div>
+       </div>
+       
+       
+</body>
+</html>
