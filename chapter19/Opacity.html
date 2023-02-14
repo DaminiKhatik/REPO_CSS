@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity
+    </title>
+    <style>
+.transparent-element {
+ /* for IE 8 & 9 */
+
+ /* works in IE 8 & 9 too, but also 5, 6, 7 */
+ filter: alpha(opacity=25); 
+ opacity: 0.25;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Opacity Property</h2>
+    <div style="opacity:1.0;">
+        Opaque
+</div>
+<div style="opacity:0.75;">
+    25% transparent (75% Opaque)
+   </div>
+   <div style="opacity:0.5;">
+    This is a partially transparent element 50% transparent (50% Opaque)
+   </div>
+   <div style="opacity:0.25;">
+    75% transparent (25% Opaque)
+   </div>
+   <div style="opacity:0.0;">
+    75% transparent (25% Opaque)
+   </div>
+   <br><br>
+   <h2>IE Compatibility for `opacity`
+</h2>
+<p class=".transparent-element">support older IE versions too, you can add something </p>
+</body>
+</html>
