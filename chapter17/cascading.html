@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cascading</title>
+    <style>
+        .mystyle { color: blue; } 
+        
+div { color: red; } 
+body > .mystyle { background-color: blue; } /* specificity: 0, 0, 1, 1 */
+.otherstyle > div { background-color: red; } 
+    </style>
+</head>
+<body>
+    <h2> Cascading</h2>
+    <div class="mystyle">Hello World</div>
+    <br><br>
+    <body class="otherstyle">
+        <div class="mystyle">Hello World</div>
+       </body>
+
+</body>
+</html>

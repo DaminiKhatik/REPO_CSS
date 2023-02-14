@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculating Selector Specificity</title>
+<style>
+.one{
+text-shadow: greenyellow;
+}
+#two{
+    text-align: center;
+    text-decoration: dotted;
+}
+div{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(211, 130, 130);
+    text-align: center;
+
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+</style>
+</head>
+<body>
+    <h2>
+         Calculating Selector Specificity
+    </h2>
+
+    <p class="one">hiiiii</p>
+    <br><br>
+    <p id="two">hiiii</p>
+    <br><br>
+    <div >hiiiii</div>
+    <br><br>
+      
+      <p>select what u want</p>
+      <ol class="c">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+      
+      <ol class="d">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+</li>
+    
+</body>
+</html>
