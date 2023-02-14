@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        div {
+position: absolute;
+ height: 200px;
+ width: 200px;
+}
+div#div1 {
+ z-index: 1;
+ left: 0px;
+ top: 0px;
+ background-color: blue;
+}
+
+
+#one{
+position: absolute;
+ height: 200px;
+ width: 200px;
+ background-color: #00ff8c;
+}
+#two{
+position:fixed;
+ height: 200px;
+ width: 200px;
+ background-color: aqua;
+}
+#three{
+position: relative;
+ height: 200px;
+ width: 200px;
+ background-color: brown;
+ 
+}
+
+#four{
+position: static;
+ height: 200px;
+ width: 200px;
+ background-color: rgb(226, 110, 43);
+}
+    </style>
+</head>
+<body>
+   <h3>Overlapping Elements with z-index</h3> 
+   
+
+   <div id="div1"></div>
+
+
+
+<br><br>
+<br>
+<div id="one"></div>
+<br><br>
+<br>
+<div id="two"></div><br><br>
+<br>
+<div id="three"></div><br><br>
+<br>
+<div id="foue"></div>
+
+
+</body>
+</html>
