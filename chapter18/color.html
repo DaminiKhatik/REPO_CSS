@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <style>
+        div {
+
+ border: 10px solid currentColor;
+ color: green;
+ height: auto;
+ width: auto;
+
+}
+h3{
+    color: rgb(157, 70, 8);
+}
+p{
+    color: blueviolet;
+}
+#one{
+    color: #ff6600;
+}
+#two{
+    color:  #999933;
+}
+.three{
+    color:rgb(38, 34, 25);
+}
+.four{
+    color:rgb(0%, 0%, 100%);
+}
+.five{
+    color: rgba(255, 0, 0, 1);
+}
+.six{
+    color:  rgba(255, 0, 0, .5);
+}
+.seven{
+    color:  hsl(240, 13%, 39%); 
+}
+.eight{
+    color: hsla(240, 100%, 50%, 1) ;
+}
+
+    </style>
+</head>
+<body>
+    <h2>currentColor</h2>
+    <div>In this case, specifying currentColor for the border is most likely redundant because omitting it should produce
+identical results. Only use currentColor inside the border property within the same element if it would be
+overwritten otherwise due to a more specific selector.
+</div>
+<br>
+<br>
+
+<h3>Color Keywords</h3>
+<p>Most browsers support using color keywords to specify a color. For example, to set the color of an element to blue,
+    use the blue keyword:</p>
+    <br>
+    <br>
+    <h3>Hexadecimal Value</h3>
+    <p id="one">CSS colors may also be represented as a hex triplet, where the members represent the red, green and blue
+        components of a color.</p>
+        <br>
+        <p id="two">CSS colors may also be represented as a hex triplet, where the members represent the red, green and blue
+            components of a color.</p>
+
+            <br><br>
+            <h3>rgb() Notation</h3>
+            <p class="three">RGB is an additive color model which represents colors as mixtures of red, green, and blue light. In essence, the
+                RGB representation is the decimal equivalent of the Hexadecimal Notation. In Hexadecimal each number ranges
+                from 00-FF which is equivalent to 0-255 in decimal and 0%-100% in percentages.</p>
+                <p class="four">RGB is an additive color model which represents colors as mixtures of red, green, and blue light. In essence, the
+                    RGB representation is the decimal equivalent of the Hexadecimal Notation. In Hexadecimal each number ranges
+                    from 00-FF which is equivalent to 0-255 in decimal and 0%-100% in percentages.</p>
+                    <br><br>
+                    <h3> rgba() Notation</h3>
+                    <p class="five">RGB is an additive color model which represents colors as mixtures of red, green, and blue light. In essence, the
+                        RGB representation is the decimal equivalent of the Hexadecimal Notation. In Hexadecimal each number ranges
+                        from 00-FF which is equivalent to 0-255 in decimal and 0%-100% in percentages.</p>
+                        <p class="six">RGB is an additive color model which represents colors as mixtures of red, green, and blue light. In essence, the
+                            RGB representation is the decimal equivalent of the Hexadecimal Notation. In Hexadecimal each number ranges
+                            from 00-FF which is equivalent to 0-255 in decimal and 0%-100% in percentages.</p>
+                    
+<br>
+<br>
+<h3>hsl() Notation
+</h3>
+<p class="seven">HSL stands for hue ("which color"), saturation ("how much color") and lightness ("how much white").</p>
+<br>
+<br>
+<h3>: hsla() Notation</h3>
+<p class="eight">Similar to hsl() notation, but with an added alpha (opacity) value.</p>
+
+</body>
+</html>
