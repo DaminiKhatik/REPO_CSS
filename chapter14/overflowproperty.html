@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of overflow property to clear floats</title>
+    <style>
+div {
+ width:100px;
+ outline: 1px dashed #bbb;
+ background-color: rgb(220, 198, 145);
+}
+#div1 {
+    overflow:scroll;
+}
+#div2 {
+ overflow: hidden;
+}
+    </style>
+</head>
+<body>
+    <h2> Use of overflow property to clear floats</h2>
+    <div id="div1">
+        Small words are displayed normally, but a long word like <span
+       style="red;">supercalifragilisticexpialidocious</span> is too long so it will overflow past the
+       edge of the line-break
+       </div>
+       <br>
+       <div id="div2">
+     Small words are displayed normally, but a long word like <span
+       style="red;">supercalifragilisticexpialidocious</span> will be split at the line break and continue
+       on the next line.
+       </div>
+       
+</body>
+</html>
