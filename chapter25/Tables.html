@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>table</title>
+<style>
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+} 
+
+th,td {
+  border: 1px solid black;
+}
+
+table.c {
+  table-layout: auto;
+  width: 100%;  
+}
+
+table.d {
+  table-layout: fixed;
+  width: 100%;  
+}
+table.ex1 {
+  empty-cells: hide;
+}
+
+table.ex2 {
+  empty-cells: show;
+}
+table, td, th {
+  border: 1px solid black;
+}
+
+.one {
+  border-collapse: separate;
+}
+
+.two {
+  border-collapse: collapse;
+  
+}
+.three {
+  border-collapse: separate;
+  border-spacing: 15px 50px;
+  
+}
+.four {
+  caption-side: top;
+}
+</style>
+</head>
+<body>
+
+<h1> table-layout </h1>
+
+
+<h2>table-layout: auto; width: 100%:</h2>
+<table class="c">
+  <tr>
+    <th>name</th>
+    <th>age</th>
+    <th>City</th>
+  </tr>
+  <tr>
+    <td>ayan</td>
+    <td>24</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>giyan</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>vihan</td>
+    <td>32</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<h2>table-layout: fixed; width: 100%:</h2>
+<table class="d">
+    <th>name</th>
+    <th>age</th>
+    <th>City</th>
+  </tr>
+  <tr>
+    <td>ayan</td>
+    <td>24</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>giyan</td>
+    <td>23</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>vihan</td>
+    <td>32</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+
+<br>
+<h2>empty-cells</h2>
+<table class="ex2" border="1">
+    <tr>
+      <td>heena</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Lotus</td>
+      <td></td>
+    </tr>
+  </table>
+  <br>
+  <br>
+<h2>border-collapse</h2>
+
+<table class="one">
+    <th>name</th>
+    <th>age</th>
+    <th>City</th>
+  </tr>
+  <tr>
+    <td>ayan</td>
+    <td>24</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>giyan</td>
+    <td>23</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>vihan</td>
+    <td>32</td>
+    <td>Italy</td>
+  </tr>
+</table>
+<br>
+<table class="two">
+    <th>name</th>
+    <th>age</th>
+    <th>City</th>
+  </tr>
+  <tr>
+    <td>ayan</td>
+    <td>24</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>giyan</td>
+    <td>23</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>vihan</td>
+    <td>32</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<br>
+<h2> border-spacing</h2>
+<table class="three">
+    <th>name</th>
+    <th>age</th>
+    <th>City</th>
+  </tr>
+  <tr>
+    <td>ayan</td>
+    <td>24</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>giyan</td>
+    <td>23</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>vihan</td>
+    <td>32</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<br>
+<h2>caption-side</h2>
+<table class="four">
+    <caption>data table </caption>
+    <th>name</th>
+    <th>age</th>
+    <th>City</th>
+  </tr>
+  <tr>
+    <td>ayan</td>
+    <td>24</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>giyan</td>
+    <td>23</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>vihan</td>
+    <td>32</td>
+    <td>Italy</td>
+  </tr>
+</table>
+</body>
+</html>
