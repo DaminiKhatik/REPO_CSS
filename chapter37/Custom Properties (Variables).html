@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Properties (Variables)</title>
+    <style>
+        :root {
+    --main-bg-color:rgb(170, 204, 0);
+}
+.a{
+    color: var(--main-bg-color);
+}
+:root {
+    --main-color:rgb(204, 99, 0);
+}
+.b{
+    color: var(--main-color);
+}
+ :root {
+ --W200: 200px;
+ --W10: 10px;
+}
+.c {
+ width: var(--W200);
+ height: var(--W200);
+ margin: var(--W10);
+}
+.button {
+ --color: green;
+ padding: .5rem;
+ border: 1px solid var(--color);
+ color: var(--color);
+}
+
+.button:hover {
+ --color: blue;
+}
+.button_red {
+ --color: red;
+}
+ul{
+    list-style-type: square;
+}
+:root{
+ --width: 25%;
+ --content: 'This is desktop';
+}
+@media only screen and (max-width: 767px){
+ :root{
+ --width:50%;
+ --content: 'This is mobile';
+ }
+}
+@media only screen and (max-width: 480px){
+ :root{
+ --width:100%;
+ }
+}
+div.a1{
+ width: calc(var(--width) - 20px);
+ height: 100px;
+}
+div.a1:before{
+ content: var(--content);
+}
+
+body {
+ padding: 10px;
+}
+div.a1{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-weight:bold;
+ float:left;
+ margin: 10px;
+ border: 4px solid black;
+ background: rgb(255, 136, 0);
+}
+
+  </style>
+</head>
+<body>
+  <h2>Custom Properties (Variables)</h2><br>
+  <h3>Variable Color</h3> 
+  <div class="a">Variable Color............</div> 
+  <div class="b">Variable Color............</div> 
+
+<br><br>
+<h3>Variable Dimensions
+</h3>
+<div class="c">Variable Dimensions</div>
+<br><br>
+<h3>Variable Cascading
+</h3>
+<a class="button">Button Green</a>
+<a class="button button_red">Button Red</a>
+<a class="button">Button Hovered On</a>
+<br><br>
+<h3> Valid/Invalids</h3>
+<label for="valid"> Valid variable names</label>
+<ul>
+    <li>--color:.....;</li>
+    <li>--bg-color:....;</li>
+    <li>--$width:..px; </li>
+</ul>
+<label for="Invalid"> Invalid variable names</label>
+<ul>
+    <li>--123color:.....;</li>
+    <li>--#bg-color:....;</li>
+    <li>--width:..px;
+    </li>
+</ul>
+<br><br>
+<h3>With media queries</h3>
+<div class="a1"></div>
+<div class="a1"></div>
+<div class="a1"></div>
+<div class="a1"></div>
+</body>
+</html>
