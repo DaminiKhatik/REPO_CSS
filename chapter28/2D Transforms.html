@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transforms</title>
+    <style>
+        .rotate {
+ width: 100px;
+ height: 100px;
+ background: rgb(3, 32, 6);
+ transform: rotate(65deg);
+}
+.scale {
+ width: 100px;
+ height: 100px;
+ background: #041a1a;
+ transform: scale(0.5, 1.3);
+}
+.skew {
+ width: 100px;
+ height: 100px;
+ background: rgb(2, 7, 7);
+ transform: skew(20deg, -30deg);
+}
+.transform {
+ transform: rotate(15deg) translateX(200px);
+ background-color:black;
+ height: 100px;
+            width: 400px;
+            border: 2px solid black;
+
+}
+.transform1 {
+ transform: rotate(90deg) translateX(200px);
+
+ background-color:black;
+ height: 100px;
+            width: 300px;
+            border: 2px solid black;
+
+}
+
+.translate {
+ width: 100px;
+ height: 100px;
+ background: rgb(1, 11, 11);
+ transform: translate(200px, 50%);}
+ .transform {
+ display: inline-block;
+ width: 200px;
+ height: 100px;
+ background: rgb(2, 16, 16);
+ transition: transform 1s;
+}
+.origin1 {
+ transform-origin: 0 0;
+}
+.origin2 {
+ transform-origin: 100% 0;
+}
+.transform:hover {
+ transform: rotate(30deg);
+}
+ 
+
+
+    </style>
+</head>
+<body>
+    <h2>2D Transforms</h2>
+    <br>
+    <h3>2D Transforms</h3>
+    <div class="rotate"></div>
+    <br>
+    <h3>Scale</h3>
+    <div class="scale"></div>
+    <br>
+    <h3>Skew</h3>
+    <div class="skew"></div>
+    <br>
+    <h3> Multiple transforms</h3>
+    <div class="transform"></div>
+    <br><br>
+    <div class="transform1"></div>
+
+    <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br>
+    <h3> Translate</h3>
+    <div class="translate"></div>
+    <br>
+    <h3> transforms origin</h3>
+    <div class="transform originl"></div>
+    <div class="transform origin2"></div>
+    
+    <br><br>
+
+
+</body>
+</html>
