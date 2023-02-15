@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        div.a {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(202, 246, 136);
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: rgb(202, 246, 136);}
+  to {background-color: rgb(255, 85, 0);}
+  from {background-color: rgb(255, 85, 0);}
+ to{ background-color: #ff0080; }
+ from{ background-color: #ff0080;  }
+ to{ background-color: #ff0000; }
+
+
+}
+.box {
+  background: #2db34a;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  height: 200px;
+  width: 200px;
+}
+.box:hover {
+  background: #ff7b29;
+}
+div.c{
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-name:slidein;
+    background: #1abff6;height: 200px;
+  width: 200px;
+  animation-iteration-count: 2;
+animation-direction: reverse;
+animation-fill-mode: both;
+}
+.d {
+  background: #edf026;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  height: 200px;
+  width: 200px;
+  will-change: transform; 
+will-change: opacity; 
+opacity:0.75;
+transform:  skewY(20deg);;
+}
+.d:hover {
+  background: #78ff29;
+}
+    </style>
+</head>
+<body>
+<h2>Animations</h2>
+<br>
+<br>
+<h4>Section 27.1: Animations with keyframes</h4>
+<div class="a">For multi-stage CSS animations, you can create CSS @keyframes. Keyframes allow you to define multiple animation
+    points, called a keyframe, to define more complex animations.
+    </div>
+    <br>
+<br>
+<!--Animations with the transition property-->
+<h4>Animations with the transition property</h4>
+<div class="box">Box</div>
+<br>
+<br>
+<!--Syntax Examples-->
+<h4>Syntax Examples</h4>
+<div class="c">hiiii</div>
+
+<br>
+<br>
+<!--: Increasing Animation Performance Using the
+`will-change` Attribute-->
+<h4>Increasing Animation Performance Using the
+    `will-change` Attribute</h4>
+    <br>
+    <br>
+<div class="d">heloooooooo</div>
+
+</body>
+</html>
