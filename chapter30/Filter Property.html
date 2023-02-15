@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Property</title>
+    <style>
+img {
+ -webkit-filter: blur(1px);
+ filter: blur(2px);
+}
+p {
+ -webkit-filter: drop-shadow(10px 10px 1px green);
+ filter: drop-shadow(10px 10px 1px rgb(13, 0, 128));
+}
+#a{
+ -webkit-filter: hue-rotate(120deg);
+ filter: hue-rotate(120deg);
+}
+#b {
+ -webkit-filter: brightness(200%) grayscale(80%) sepia(90%) invert(60%);
+ filter: brightness(200%) grayscale(100%) sepia(100%) invert(100%);
+}
+div.a {
+ width: 100px;
+ height: 100px;
+ background-color: #131010;
+ -webkit-filter: invert(100%);
+ filter: invert(100%);
+ 
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Filter Property</h1>
+    <h3>blur</h3>
+    <img src='C:\Users\khati\Desktop\CSSbook\chapter30\image2.jpg' alt='nature' title='nature' />
+<br>
+    <h3> Drop Shadow (use box-shadow instead if possible)
+        </h3>
+        <p>My shadow always follows me.</p>
+        <br>
+        <h3>Hue Rotate</h3>
+        <img id="a" src='C:\Users\khati\Desktop\CSSbook\chapter30\image2.jpg' alt='nature' title='nature' />
+        <br>
+        <h3>Multiple Filter Values</h3>
+        <img id="b" src='C:\Users\khati\Desktop\CSSbook\chapter30\image2.jpg' alt='nature' title='nature' />
+        <br>
+        <h3>Invert Color</h3>
+        <div class="a">hiii</div>
+
+
+</body>
+</html>
