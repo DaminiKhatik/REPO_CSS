@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transforms</title>
+    <style>
+        div.needle {
+ margin: 100px;
+ height: 150px;
+ width: 150px;
+ 
+ 
+ background-image: linear-gradient(to top left, #555 0%, #555 40%, #444 50%, #333 97%);
+ box-shadow: inset 6px 6px 22px 8px #272727; 
+}
+        div.needle1 {
+ margin: 100px;
+ height: 150px;
+ width: 150px;
+ transform: rotateY(85deg) rotateZ(45deg);
+ 
+ background-image: linear-gradient(to top left, #555 0%, #555 40%, #444 50%, #333 97%);
+ box-shadow: inset 6px 6px 22px 8px #272727; 
+}
+
+
+
+.flip {
+ -webkit-transform: rotateY(180deg);
+ -moz-transform: rotateY(180deg);
+ -ms-transform: rotateY(180deg);
+ -webkit-backface-visibility: visible;
+ -moz-backface-visibility: visible;
+ -ms-backface-visibility: visible;
+ background: blueviolet;
+  height: 200px;
+  width: 200px;
+}
+.flip.back {
+ -webkit-backface-visibility: hidden;
+ -moz-backface-visibility: hidden;
+ -ms-backface-visibility: hidden;
+ background: rgb(43, 226, 101);
+ height: 200px;
+  width: 200px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <h2>3D Transforms</h2>
+    <br>
+    <h3>before 3D transform</h3>
+   
+        <div class='needle'></div>
+    
+        <h3>Compass pointer or needle shape using 3D
+            transforms</h3>
+           
+        <div class='needle1'></div>
+        <br><br>
+        
+        <h3> backface-visibility</h3>
+        <div class="flip">Loren ipsum</div>
+<div class="flip back">Lorem ipsum</div>
+        
+        <h3> 3Dcube</h3>
+        <div class="scene">
+            <div class="cube">
+              <div class="cube__face cube__face--front">front</div>
+              <div class="cube__face cube__face--back">back</div>
+              <div class="cube__face cube__face--right">right</div>
+              <div class="cube__face cube__face--left">left</div>
+              <div class="cube__face cube__face--top">top</div>
+              <div class="cube__face cube__face--bottom">bottom</div>
+            </div>
+          </div>
+           
+</body>
+</html>
