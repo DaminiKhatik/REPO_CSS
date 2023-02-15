@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+    <style>
+        body {
+ counter-reset: item-counter;
+}
+.item {
+ counter-increment: item-counter;
+}
+.item:before {
+ content: counter(item-counter, upper-roman) ". ";
+}
+.item1 {
+ counter-increment: item-counter; 
+
+}
+.item1-header:before {
+ content: counter(item-counter) ". "; 
+
+}
+
+.item1{
+ border: 1px solid;
+ height: 100px;
+ margin-bottom: 10px;
+}
+.item1-header {
+ border-bottom: 1px solid;
+ height: 40px;
+ line-height: 40px;
+ padding: 5px;
+}
+.item1-content {
+ padding: 8px;
+}
+ul {
+ list-style: none;
+ counter-reset: list-item-number; 
+}
+li {
+ counter-increment: list-item-number;
+}
+li:before {
+ content: counters(list-item-number, ".") " "; 
+}
+    </style>
+</head>
+<body>
+    <h1>Counters</h1>
+    <br>
+    <h3>Applying roman numerals styling to the counter
+        output</h3>
+<div class='item'>Item No: 1</div>
+<div class='item'>Item No: 2</div>
+<div class='item'>Item No: 3</div>
+<br><br>
+<h3>Number each item using CSS Counter
+</h3>
+<div class='item1'>
+    <div class='item-header'>Item 1 Header</div>
+    <div class='item-content'>Lorem Ipsum Dolor Sit Amet....</div>
+   </div>
+   <div class='item1'>
+    <div class='item-header'>Item 2 Header</div>
+    <div class='item-content'>Lorem Ipsum Dolor Sit Amet....</div>
+   </div>
+   <div class='item1'>
+    <div class='item-header'>Item 3 Header</div>
+    <div class='item-content'>Lorem Ipsum Dolor Sit Amet....</div>
+   </div>
+   <br><br>
+   <h3>Implementing multi-level numbering using CSS
+    counters</h3>
+    <ul>
+        <li>Level 1
+        <ul>
+        <li>Level 1.1
+        <ul>
+        <li>Level 1.1.1</li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        <li>Level 2
+        <ul>
+        <li>Level 2.1
+        <ul>
+        <li>Level 2.1.1</li>
+        <li>Level 2.1.2</li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        <li>Level 3</li>
+       </ul>
+       
+</body>
+</html>
