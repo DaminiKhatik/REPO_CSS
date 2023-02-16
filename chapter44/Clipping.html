@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clipping</title>
+    <style>
+       div.a {
+        width: 200px;
+ height: 200px;
+ background: rgb(126, 128, 0);
+ clip-path: circle(30% at 50% 50%); /
+        }
+        div.b{
+            width:200px;
+ height:200px;
+ background:teal;
+ clip-path: polygon(0 0, 0 100%, 100% 50%); 
+        }
+        div.c{
+            width: 200px;
+ height: 200px;
+ 
+ background-image: radial-gradient(circle 20px at calc(100% - 30px) calc(100% - 30px), rgb(249, 249, 242) 30px, rgb(42, 12, 1) 0);
+
+}
+
+
+div.d {
+ height: 200px;
+ width: 400px;
+ background-image: url(image.jpg);
+ mask-image: linear-gradient(to top right, transparent 49.5%, white 50.5%), linear-gradient(to top
+left, transparent 49.5%, white 50.5%), linear-gradient(white, white);
+ mask-size: 75% 25%, 25% 25%, 70% 75%;
+ mask-position: bottom left, bottom right, top left;
+ mask-repeat: no-repeat;
+}
+
+        
+    </style>
+</head>
+<body>
+    <h1>Clipping</h1>
+    <h3>Circle</h3>
+    <div class="a"></div><br>
+   <h3>Polygon</h3>
+    <div class="b"></div><br>
+    <h3>Using masks to cut a hole in the middle of an
+        image
+        </h3>
+    <div class="c"></div>
+    <br>
+    <h3> Using masks to create images with irregular
+        shapes</h3>
+        <div class="d"></div>
+
+
+
+</body>
+</html>
