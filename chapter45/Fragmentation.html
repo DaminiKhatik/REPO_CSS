@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragmentation</title>
+    <style>
+        @media print {
+  
+  .a {
+    page-break-after: avoid;
+  }
+  .b{
+    page-break-after: always;
+  }
+}
+    </style>
+</head>
+<body>
+    <h2>Fragmentation</h2>
+    <h3>Media print page-break</h3>
+    <br>
+    <p class="a">it prevents a page break inside any p tags, meaning a paragraph will never be broken in two pages, if
+        possible.</p>
+        <br><br><br><br>
+
+        <p class="b">it forces a page-break-before in all h1 headings, meaning that before every h1 occurrence, there will be a
+            page break</p>
+            <br><br><br><br>
+
+            <p class="c">it prevents page-breaks right after any h2
+            </p>
+</body>
+</html>
