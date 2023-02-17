@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Support & Prefixes</title>
+    <style>
+        div.a {
+  width: 100px;
+  height: 100px;
+  background: rgb(252, 20, 20);
+  -webkit-transition: 4s;
+}
+div.a:hover {
+  width: 300px;
+}
+div.b {
+  width: 100px;
+  height: 100px;
+  background: rgb(132, 252, 20);
+ -moz-transition: 4s;
+}
+div.b:hover {
+  width: 300px;
+}div.c {
+  width: 100px;
+  height: 100px;
+  background: rgb(20, 20, 186);
+-o-transition: 4s;
+}
+div.c:hover {
+  width: 300px;
+}
+div.d {
+  width: 100px;
+  height: 100px;
+  background: rgb(220, 243, 10);
+transition: 4s;
+}
+div.d:hover {
+  width: 300px;
+}
+
+div.a1{
+    width: 100px;
+  height: 100px;
+  background: rgb(252, 20, 20);
+  transform: rotate(45deg);
+}
+div.a2{
+    width: 100px;
+  height: 100px;
+  background: rgb(252, 20, 20);
+  -webkit-transform: rotate(45deg);
+}
+div.a3{
+    width: 100px;
+  height: 100px;
+  background: rgb(252, 20, 20);
+  -moz-transform: rotate(45deg);
+}
+div.a4{
+    width: 100px;
+  height: 100px;
+  background: rgb(252, 20, 20);
+  -ms-transform: rotate(45deg)
+}
+div.a5{
+    width: 100px;
+  height: 100px;
+  background: rgb(252, 20, 20);
+  -o-transform: rotate(45deg);
+}
+
+    </style>
+</head>
+<body>
+    <h1>Browser Support & Prefixes</h1>
+    <br>
+    <h3>Transitions</h3>
+
+<div class="a">
+<p>Hover over the div element below, to see the transition effect:</p></div>
+<div class="b">
+    <p>Hover over the div element below, to see the transition effect:</p></div>
+    <div class="c">
+        <p>Hover over the div element below, to see the transition effect:</p></div>
+        <div class="d">
+            <p>Hover over the div element below, to see the transition effect:</p></div>
+
+            <br><br>
+            <h3>Transform</h3>
+            <div class="a1"></div><br><br><br><br>
+            <div class="a2"></div><br><br><br><br>
+            <div class="a3"></div><br><br><br><br>
+            <div class="a4"></div><br><br><br><br>
+            <div class="a5"></div><br><br><br><br>
+
+</body>
+</html>
