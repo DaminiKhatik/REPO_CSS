@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Inline Block support to IE6 and IE7</title>
+    <style>
+        .a {
+	display: inline;
+	vertical-align: middle;
+	zoom: 1;
+    height: 300px;
+    width: 300px;
+    background: red;
+}
+.b {
+	display: inline-block;
+	*display: inline;
+	*vertical-align: middle;
+	zoom: 1;
+    height: 300px;
+    width: 300px;
+    background: rgb(229, 255, 0);
+    
+}
+
+@media screen and (-ms-high-contrast: black-on-white) {
+ .c{
+ background: white;
+ color:black;
+ }
+}
+.hide-on-ie6-and-ie7 {
+ *display : none; // This line is processed only on IE6 and IE7
+}
+@media \0 screen {
+ .hide-on-ie8 {
+ display : none;//Internet Explorer 8 only
+ }
+}
+
+    </style>
+</head>
+<body>
+    <h2>Adding Inline Block support to IE6 and IE7</h2>
+    <div class="a"></div><br>
+    <div class="b"></div>
+    <br>
+    
+        <div class="c"></div>
+        <div class="hide-on-ie8"></div>
+        <div class="hide-on-ie6-and-ie7"></div>
+</body>
+</html>
