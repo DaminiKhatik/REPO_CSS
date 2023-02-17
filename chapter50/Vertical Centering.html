@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Centering</title>
+    <style>
+        .wrapper {
+ height: 600px;
+ text-align: center;
+
+}
+.outer {
+ display: table;
+ height: 50%;
+ width:50%;
+}
+.outer .inner {
+ display: table-cell;
+ text-align: center;
+ vertical-align: middle;
+ background-color: rgb(46, 191, 46);
+ color: rgb(9, 9, 71);
+}
+.container {
+ height: 500px;
+ width: 500px;
+ display: flex; 
+ align-items: center; 
+ justify-content: center;
+ background: rgb(217, 134, 134);
+}
+.child {
+ width: 100px; 
+ height: 100px;
+ background: blue;
+}
+
+.wrapper1 {
+ position: relative;
+ height: 300px;
+ width: 300;
+background: skyblue;
+}
+.centered {
+ position: absolute;
+ transform: translate(-50%, -50%);
+ top: 50%;
+ left: 50%;
+}
+.container1{
+ height: 50px; /* set height */
+ line-height: 50px; /* set line-height equal to the height */
+ background:rgb(250, 195, 128);
+ text-align: center;/* works without this rule, but it is good having it explicitly set */
+}
+
+
+.wrapper2{
+ min-height: 600px;
+}
+.wrapper2:after{
+ content: "hello";
+display: block;
+text-align: center;
+background: blueviolet;
+}
+
+.content {
+ display: inline-block;
+ height: 80px;
+ vertical-align: middle;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Vertical Centering</h1><br>
+    <h3>Centering with display: table</h3>
+    <div class="wrapper">
+        <div class="outer">
+        <div class="inner">
+       centered
+        </div>
+        </div>
+       </div>
+
+       <br>
+       <h3>Centering with Flexbox</h3>
+       <div class="container">
+        <div class="child"></div>
+       </div>
+       <br>
+<h3>Centering with Transform</h3>
+<div class="wrapper1">
+    <div class="centered">
+    centered
+    </div>
+   </div>
+   <br>
+   <h3>Centering Text with Line Height</h3>
+   <div class="container1">
+    <span>vertically centered</span>
+   </div>
+   <br>
+   <h3>Centering with pseudo element</h3>
+   <div class="wrapper2">
+    <div class="content"></div>
+   </div>
+    </body>
+</html>
