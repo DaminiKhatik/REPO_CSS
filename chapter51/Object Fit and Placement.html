@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit and Placement</title>
+    <style>
+h2 {
+  font-family: Courier New, monospace;
+  font-size: 1em;
+  margin: 1em 0 0.3em;
+}
+
+img {
+  width: 150px;
+  height: 100px;
+  border: 1px solid #000;
+  margin: 10px 0;
+}
+
+.narrow {
+  width: 100px;
+  height: 150px;
+}
+
+.fill {
+  object-fit: fill;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.none {
+  object-fit: none;
+}
+
+.scale-down {
+  object-fit: scale-down;
+}
+    </style>
+</head>
+<body>
+    <center>
+   <h2>Object Fit and Placement</h2> 
+   <br>
+  
+
+   <section>
+    <h2>object-fit: fill</h2>
+    <img class="fill" src="C:\Users\khati\Downloads\image.jpg" alt="nature" />
+  
+    <img class="fill narrow" src="C:\Users\khati\Downloads\image.jpg" alt=" nature" />
+  
+    <h2>object-fit: contain</h2>
+    <img class="contain" src="C:\Users\khati\Downloads\image.jpg" alt="nature" />
+  
+    <img class="contain narrow" src="C:\Users\khati\Downloads\image.jpg" alt="MDN Logo" />
+  
+    <h2>object-fit:cover</h2>
+    <img class="cover" src="C:\Users\khati\Downloads\image.jpg" alt="nature" />
+  
+    <img class="cover narrow" src="C:\Users\khati\Downloads\image.jpg" alt="nature" />
+  
+    <h2>object-fit: none</h2>
+    <img class="none" src="C:\Users\khati\Downloads\image.jpg" alt="nature" />
+  
+    <img class="none narrow" src="C:\Users\khati\Downloads\image.jpg" alt="nature" />
+  
+    <h2>object-fit: scale-down</h2>
+    <img class="scale-down" src="C:\Users\khati\Downloads\image.jpg" alt="nature" />
+  
+    <img class="scale-down narrow" src="C:\Users\khati\Downloads\image.jpg" alt="nature" />
+  </section>
+</center>
+</body>
+</html>
