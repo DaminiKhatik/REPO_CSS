@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Supports, Chaining feature detections</title>
+	<style>
+		@supports (display: flex) {
+			div.b, h1 {
+				display: flex;
+				justify-content: flex-start;
+				color: rgb(0, 17, 128);
+				border: 8px solid green;
+				padding: 20px;
+				font-size: 35px;
+                text-align: center;
+                
+			}
+		}
+		@supports (display: flex)
+or (display: -webkit-box)
+or (display: -webkit-flex)
+or (display: inline-block)
+		 {
+			div.a{
+				display:inline-block ;
+				justify-content: flex-start;
+				color: rgb(208, 193, 24);
+				border: 8px solid green;
+				padding: 30px;
+				font-size: 35px;
+                text-align: center;
+				perspective: 1px;
+                
+			}
+		}
+	</style>
+</head>
+<body>
+	<h2>Basic @supports usage</h2>
+	<div class="b">
+		<h1>helloooooooooooooooooooooooo</h1>
+	</div>
+	<br>
+	<br>
+	<h2>Chaining feature detections</h2>
+	<div class="a">hiiiiiiiiiiiiii</div>
+</body>
+</html>
